@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+  xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" 
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  
+  <display-name>final</display-name>
+
+  <servlet>
+    <servlet-name>testConfig</servlet-name>
+    <jsp-file>/JSP/config.jsp</jsp-file>
+
+    <init-param>
+      <param-name>PARAM1</param-name>
+      <param-value>testInit_VALUE1</param-value>
+    </init-param>
+
+    <init-param>
+      <param-name>PARAM2</param-name>
+      <param-value>testInit_VALUE2</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>testConfig</servlet-name>
+
+    <url-pattern>/CONFIG</url-pattern>
+    <url-pattern>/JSP/config.pig</url-pattern>
+    <url-pattern>/configJSP</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- <servlet>
+    <servlet-name>HelloServlet2</servlet-name>
+    <servlet-class>org.zerock.myapp.servlet.HelloServlet2</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>HelloServlet2</servlet-name>
+    <url-pattern>/Deff</url-pattern>
+    <url-pattern>/asd</url-pattern>
+  </servlet-mapping> -->
+  <servlet>
+    <servlet-name>InitParamServlet</servlet-name>
+    <servlet-class>org.zerock.myapp.servlet.InitParamServlet</servlet-class>
+    <init-param>
+      <param-name>dirPath</param-name>
+      <param-value>C:/temp</param-value>
+    </init-param>
+    <init-param>
+      <param-name>userid</param-name>
+      <param-value>Deff</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitParamServlet</servlet-name>
+    <url-pattern>/InitParam</url-pattern>
+  </servlet-mapping>
+
+
+  <context-param>
+    <param-name>driver</param-name>
+    <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>savePath</param-name>
+    <param-value>C:/temp</param-value>
+  </context-param>
+  
+
+  <listener>
+    <listener-class>org.zerock.myapp.listener.ServletContextListenerImpl</listener-class>
+  </listener>
+
+
+  <!-- FIlter
+  <filter>
+    <filter-name>MyFilter1</filter-name>
+    <filter-class>org.zerock.myapp.filter.MyFilter</filter-class>
+
+    <init-param>
+      <param-name>PARAM1</param-name>
+      <param-value>VALUE1</param-value>
+    </init-param>
+    <init-param>
+      <param-name>PARAM2</param-name>
+      <param-value>VALUE2</param-value>
+    </init-param>
+
+  </filter>
+
+  <filter-mapping>
+    <filter-name>MyFilter1</filter-name>
+    <url-pattern>/*</url-pattern>
+    
+  </filter-mapping>
+
+  <filter>
+    <filter-name>MyFilter2</filter-name>
+    <filter-class>org.zerock.myapp.filter.My2Filter</filter-class>
+
+    <init-param>
+      <param-name>PARAM3</param-name>
+      <param-value>VALUE3</param-value>
+    </init-param>
+    <init-param>
+      <param-name>PARAM4</param-name>
+      <param-value>VALUE4</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>MyFilter2</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping> -->
+
+
+  <!-- 아래의 설정은, 한번 생성된 세션의 유효시간을 분단위로 설정합니다.
+      즉 아래의 설정은 한번 생성된 세션은,
+      1분동안 동일한 웹브라우저로부터 요청이 들어오지 않으면,
+     즉시 파괴하란 설정입니다.
+     참고로 세션은 서버의 메모리에(Session Storage) 생성됩니다. -->
+
+  <!-- <session-config>
+    <session-timeout>1</session-timeout>
+  </session-config> -->
+
+
+</web-app>
