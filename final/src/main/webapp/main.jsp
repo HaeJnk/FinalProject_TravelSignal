@@ -1,7 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page 
+    language="java" 
+    contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -31,17 +33,17 @@
   <header>
     
     <div class="signup-container">
-      <div><a href="loginpage.jsp">로그인</a></div>
+      <div><a href="loginpage.html">로그인</a></div>
       <div><a href="#">회원가입</a></div>
     </div>
 
     <ul class="category">
-      <li><a href="main.jsp" target="_self"><img src="img/travelsignal2.png" alt="여행시그널로고"></a> </li>
-      <li><a href="재균" target="_self" >동행 찾기</a> </li>
-      <li><a href="기서" target="_self" >QnA</a> </li>
-      <li><a href="대수" target="_self" >동행 환승</a> </li>
-      <li><a href="현대" target="_self" >플래너</a> </li>
-      <li><a href="영선" target="_self" >여행후기</a> </li>
+      <li><a href="main.html" target="_self"><img src="img/travelsignal2.png" alt="여행시그널로고"></a> </li>
+      <li><a href="#" target="_self" >동행 찾기</a> </li>
+      <li><a href="#" target="_self" >QnA</a> </li>
+      <li><a href="#" target="_self" >동행 환승</a> </li>
+      <li><a href="#" target="_self" >플래너</a> </li>
+      <li><a href="#" target="_self" >여행후기</a> </li>
       <li>
         <div>
           <input type="text">
@@ -57,56 +59,6 @@
   <main>
     <section class="wrap">
       <h1>여행 <span>후기</span></h1>
-      <!-- 
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="inner">
-            <div class="con">
-              <img src="img/pic1.png">
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="inner">
-            <div class="con">
-              <img src="img/pic2.png">
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="inner">
-            <div class="con">
-              <img src="img/pic3.png">
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="inner">
-            <div class="con">
-              <img src="img/pic4.png">
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="inner">
-            <div class="con">
-              <img src="img/pic5.png">
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-  
-      <div class="swiper-pagination"></div>
-  
-      <ul class="auto">
-        <li class="btnStart"><i class="fas fa-play"></i></li>
-        <li class="btnStop"><i class="fas fa-pause"></i></li>
-      </ul>
-    -->
-
 
     </section>
 
